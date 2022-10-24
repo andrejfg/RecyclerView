@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_to_main">Voltar</string>
+    <string name="activity_main_title">Estudo de RecyclerView</string>
+    <string name="rv_in_activity">RecyclerView em Atividade</string>
+    <string name="rv_in_fragment">RecyclerView em Fragmento</string>
+</resources>
