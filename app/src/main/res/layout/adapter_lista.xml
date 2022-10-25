@@ -15,8 +15,9 @@
         android:text="Homem Aranha Homem Aranha Homem Aranha Homem Aranha "
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/id_genero"
         app:layout_constraintEnd_toStartOf="@+id/id_ano"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,9 +35,35 @@
         android:id="@+id/id_genero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:text="Aventura"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/id_sinopse"
         app:layout_constraintStart_toStartOf="@+id/id_titulo"
         app:layout_constraintTop_toBottomOf="@+id/id_titulo" />
+
+    <TextView
+        android:id="@+id/id_sinopse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/sample_description"
+        android:textAlignment="viewStart"
+        android:typeface="normal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/id_ano"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/id_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/id_genero"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/id_more_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="#808080"
+        app:layout_constraintBottom_toBottomOf="@+id/id_genero"
+        app:layout_constraintEnd_toEndOf="@+id/id_ano"
+        app:layout_constraintTop_toBottomOf="@+id/id_ano"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,6 +36,7 @@ class RecyclerFragment : Fragment() {
         recyclerView.setHasFixedSize(true)
         recyclerView.addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.VERTICAL))
         recyclerView.adapter = Adapter(listafilmes)
+
     }
 
     private fun setUpRecyclerViewHorizontal(listafilmes: ArrayList<Filme>) {
@@ -46,6 +47,7 @@ class RecyclerFragment : Fragment() {
         recyclerView.addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.HORIZONTAL))
         recyclerView.setHasFixedSize(true)
         recyclerView.adapter = Adapter(listafilmes)
+
     }
 
     private fun setBindings() {

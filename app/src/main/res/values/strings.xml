@@ -6,4 +6,5 @@
     <string name="activity_main_title">Estudo de RecyclerView</string>
     <string name="rv_in_activity">RecyclerView em Atividade</string>
     <string name="rv_in_fragment">RecyclerView em Fragmento</string>
+    <string name="sample_description">Dr. Hank Pym transforma um talentoso ladrão no herói Homem-Formiga. Ele quer impedir que seu antigo pupilo consiga replicar a fórmula da roupa que dá o poder do encolhimento, força sobre-humana e a capacidade de controlar um exército de formigas.</string>
 </resources>
