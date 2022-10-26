@@ -52,7 +52,7 @@ class RecyclerInActivity : AppCompatActivity() {
         recyclerView.layoutManager = horizontalLayout
         recyclerView.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.HORIZONTAL))
         recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = Adapter(listafilmes)
+        recyclerView.adapter = Adapter(listafilmes,this)
     }
 
     private fun setUpRecyclerViewVertical(listafilmes: ArrayList<Filme>) {
@@ -60,7 +60,7 @@ class RecyclerInActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(applicationContext)
         recyclerView.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.VERTICAL))
         recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = Adapter(listafilmes)
+        recyclerView.adapter = Adapter(listafilmes,this)
     }
 
     private fun setBindings() {

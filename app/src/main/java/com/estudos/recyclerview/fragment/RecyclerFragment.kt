@@ -35,7 +35,7 @@ class RecyclerFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.setHasFixedSize(true)
         recyclerView.addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.VERTICAL))
-        recyclerView.adapter = Adapter(listafilmes)
+        recyclerView.adapter = Adapter(listafilmes, requireContext())
 
     }
 
@@ -46,7 +46,7 @@ class RecyclerFragment : Fragment() {
         recyclerView.layoutManager = horizontalLayout
         recyclerView.addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.HORIZONTAL))
         recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = Adapter(listafilmes)
+        recyclerView.adapter = Adapter(listafilmes,requireContext())
 
     }
 
