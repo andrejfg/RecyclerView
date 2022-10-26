@@ -24,7 +24,7 @@ class Adapter(private val listafilmes: ArrayList<Filme>) :
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val filme = listafilmes[position]
         holder.setData(filme)
-        holder.imMoreDescription.setOnClickListener {
+        holder.itemView.setOnClickListener {
             if (holder.sinopse.visibility != View.VISIBLE) {
                 holder.imMoreDescription.rotation = 180F
                 holder.sinopse.visibility = View.VISIBLE
